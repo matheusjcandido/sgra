@@ -1,1 +1,44 @@
-<iframe width="600" height="1068" src="https://lookerstudio.google.com/embed/reporting/344b0f28-f091-431f-83eb-c56465cb248f/page/zbSmE" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0; /* Remove margens padrão do body */
+            overflow: hidden; /* Impede rolagem da página principal */
+        }
+
+      .container {
+            width: 100vw; /* Largura total da tela */
+            height: 100vh; /* Altura total da tela */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        iframe {
+            width: 100%; /* Largura total dentro do container */
+            height: 100%; /* Altura total dentro do container */
+            border: none; /* Remove borda do iframe */
+        }
+
+        /* Estilos para telas menores (opcional - ajuste conforme necessário) */
+        @media (max-width: 767px) {
+        .container {
+            /* Ajustes específicos para telas menores, se necessário */
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://lookerstudio.google.com/embed/reporting/344b0f28-f091-431f-83eb-c56465cb248f/page/zbSmE" 
+                frameborder="0" 
+                allowfullscreen 
+                sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+        </iframe>
+    </div>
+</body>
+</html>
