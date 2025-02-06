@@ -6,29 +6,32 @@
     <title></title>
     <style>
         body {
-            margin: 0; /* Remove margens padrão do body */
-            overflow: hidden; /* Impede rolagem da página principal */
+            margin: 0;
+            overflow: hidden;
         }
 
       .container {
-            width: 100vw; /* Largura total da tela */
-            height: 100vh; /* Altura total da tela */
+            width: 100vw;
+            height: 100vh;
             display: flex;
             justify-content: center; /* Centraliza horizontalmente */
             align-items: center; /* Centraliza verticalmente */
         }
 
         iframe {
-            width: 100%; /* Largura total dentro do container */
-            height: 100%; /* Altura total dentro do container */
-            border: none; /* Remove borda do iframe */
+            width: 80%; /* Largura para desktop - Ajuste este valor */
+            height: 80vh; /* Altura para desktop - Ajuste este valor */
+            border: none;
+            max-width: 900px; /* Largura máxima para desktop (opcional) */
+            max-height: 800px; /* Altura máxima para desktop (opcional) */
+
         }
 
-        /* Estilos para telas menores (opcional - ajuste conforme necessário) */
-        @media (max-width: 767px) {
-        .container {
-            /* Ajustes específicos para telas menores, se necessário */
-          }
+        @media (max-width: 767px) { /* Para telas menores que 768px */
+            iframe {
+                width: 100%; /* Largura total em mobile */
+                height: 100%; /* Altura total em mobile */
+            }
         }
     </style>
 </head>
